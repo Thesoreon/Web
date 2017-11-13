@@ -1,0 +1,24 @@
+.Wrapper {
+	display: flex;
+
+	flex-direction: column;
+
+	justify-content: center;
+}
+
+@media (max-width: 600px) {
+
+	nav ul {
+		flex-flow: column wrap;
+
+		background-color: green;
+	}
+
+	nav li {
+		text-align: center;
+	}
+
+	.ShowButton {
+		display: block;
+	}
+}

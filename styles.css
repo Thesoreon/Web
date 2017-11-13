@@ -1,0 +1,37 @@
+body {
+	margin: 0px;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+
+	display: flex;
+	justify-content: center;
+}
+
+nav li {
+	float: left;
+	padding: 16px;
+}
+
+nav li:hover {
+	background-color: yellow;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav {
+	background-color: red;
+	width: 100%;
+
+	position: sticky;
+	top: 0;
+}
+
+.ShowButton {
+	display: none;
+}

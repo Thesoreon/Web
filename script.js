@@ -12,3 +12,4 @@ window.onresize = function() {
 	if(window.innerWidth > 600)
     	nav.style.display = "flex";
 };
+

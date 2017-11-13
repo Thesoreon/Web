@@ -14,24 +14,44 @@ nav ul {
 nav li {
 	float: left;
 	padding: 16px;
+
+	transition: background 0.5s linear;
 }
 
 nav li:hover {
-	background-color: yellow;
+	background-color: #FCA311;
+
+	transition: background 0.5s linear;
 }
 
 nav a {
 	text-decoration: none;
+	color: white;
 }
 
 nav {
-	background-color: red;
+	background-color: #14213D;
 	width: 100%;
 
 	position: sticky;
 	top: 0;
 }
 
+h1 {
+	margin: 0px;
+	padding: 16px;
+
+	background-color: #E5E5E5;
+}
+
+footer {
+	
+}
+
 .ShowButton {
 	display: none;
+}
+
+.Main {
+
 }

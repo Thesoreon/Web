@@ -87,6 +87,9 @@ footer {
 
 	position: relative;
 	z-index: -1;
+
+	font-family: textFont;
+	font-size: 22px;
 }
 
 .Aside1 {
@@ -101,6 +104,10 @@ footer {
 	order: 3;
 }
 
+.Active {
+	opacity: 0.6;
+}
+
 @font-face {
 	font-family: navFont;
 	src: url(fonts/BarlowCondensed-Thin.ttf);
@@ -111,7 +118,12 @@ footer {
 	src: url(fonts/BarlowCondensed-Bold.ttf);
 }
 
+@font-face {
+	font-family: textFont; 
+	src: url(fonts/BarlowCondensed-Medium.ttf);
+}
+
 @keyframes TextFade {
-	from {opacity: 0;}
-	to {opacity: 1;}
+	from {opacity: 0; }
+	to {opacity: 1; }
 }

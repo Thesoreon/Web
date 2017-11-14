@@ -50,8 +50,27 @@ footer {
 
 .ShowButton {
 	display: none;
+	background-color: #E76F51;
 }
 
 .Main {
+	background-color: blue;
 
+	flex: 1 100%;
+	order: 2;
+}
+
+.Aside1 {
+	background-color: red;
+
+	padding: 15px;
+
+	order: 1;
+}
+
+.Aside2 {
+	background-color: gold;
+	padding: 15px;
+
+	order: 3;
 }

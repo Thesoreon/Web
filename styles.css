@@ -27,6 +27,9 @@ nav li:hover {
 nav a {
 	text-decoration: none;
 	color: white;
+
+	font-family: navFont;
+	font-size: 24px;
 }
 
 nav {
@@ -42,6 +45,9 @@ h1 {
 	padding: 16px;
 
 	background-color: #E5E5E5;
+
+	font-family: headerFont;
+	font-size: 48px;
 }
 
 footer {
@@ -57,23 +63,28 @@ footer {
 }
 
 .Main {
-	background-color: blue;
-
 	flex: 1 100%;
 	order: 2;
 }
 
 .Aside1 {
-	background-color: red;
-
 	padding: 15px;
 
 	order: 1;
 }
 
 .Aside2 {
-	background-color: gold;
 	padding: 15px;
 
 	order: 3;
+}
+
+@font-face {
+	font-family: navFont;
+	src: url(fonts/BarlowCondensed-Thin.ttf);
+}
+
+@font-face {
+	font-family: headerFont;
+	src: url(fonts/BarlowCondensed-Bold.ttf);
 }

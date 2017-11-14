@@ -8,11 +8,17 @@
 
 .Wrapper2 {
 	display: flex;
-	
-	flex-direction: row;
+
+	flex-direction: row;	
+
+	min-height: 100vh; /* This size all the items in wrapper, so the footer is at the end of page */ 
 }
 
 @media (max-width: 600px) {
+
+	.Wrapper2 {
+		flex-wrap: wrap;
+	}
 
 	nav ul {
 		flex-flow: column wrap;
@@ -26,4 +32,7 @@
 	.ShowButton {
 		display: block;
 	}
+
+	.Aside1 { order: 1; flex: 1 100%; }
+  	.Aside2 { order: 3; flex: 1 100%; }
 }

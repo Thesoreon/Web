@@ -45,7 +45,10 @@ h1 {
 }
 
 footer {
-	
+	padding: 16px;
+	color: white;
+
+	background-color: #14213D;
 }
 
 .ShowButton {

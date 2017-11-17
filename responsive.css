@@ -32,7 +32,7 @@
 	.ShowButton {
 		display: block;
 	}
-
+	
 	.Aside1 { order: 1; flex: 1 100%; }
   	.Aside2 { order: 3; flex: 1 100%; }
 }

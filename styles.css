@@ -59,6 +59,13 @@ h2 {
 	text-align: center;
 }
 
+h3 {
+	font-family: headerFont;
+	font-size: 30px;
+
+	text-align: center;
+}
+
 footer {
 	padding: 16px;
 	color: white;
@@ -67,6 +74,8 @@ footer {
 
 	font-family: navFont;
 	font-size: 24px;
+
+	text-align: center;
 }
 
 .ShowButton {
@@ -93,6 +102,8 @@ footer {
 
 	font-family: textFont;
 	font-size: 22px;
+
+	text-align: center;
 }
 
 .Aside1 {

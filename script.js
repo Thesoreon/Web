@@ -1,16 +1,25 @@
-var nav = document.getElementById("Navigation");
+/* JAVASCRIPT */
 
-function ShowMenu() {
+var nav = document.getElementById("SubNavigation");
+
+/* function ShowMenu() {
 	
 	if(nav.style.display == "none")
 		nav.style.display = "flex";
 	else 
 		nav.style.display = "none";
-}
+} */
 
 window.onresize = function() {
 
 	if(window.innerWidth > 600)
-    	nav.style.display = "flex";
+    	nav.style.display = "block";
 };
 
+/* JQUERY */
+
+$(document).ready(function() {
+	$(".ShowButton").click(function() {
+		$("#SubNavigation").slideToggle("slow");
+	});
+});

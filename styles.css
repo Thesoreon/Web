@@ -79,6 +79,8 @@ footer {
 }
 
 .ShowButton {
+	cursor: pointer;
+
 	display: none;
 	background-color: #E76F51;
 

@@ -23,3 +23,9 @@ $(document).ready(function() {
 		$("#SubNavigation").slideToggle("slow");
 	});
 });
+
+$(".image").click(function() {
+   $("#PlaceHolder").html(this.alt);
+   $("html, body").animate({ scrollTop: 0 }, "slow");
+});
+

@@ -25,7 +25,10 @@ $(document).ready(function() {
 });
 
 $(".image").click(function() {
-   $("#PlaceHolder").html(this.alt);
+   $("#PlaceHolder").load("html.txt");
+   //$("#PlaceHolder").html(this.alt);
    $("html, body").animate({ scrollTop: 0 }, "slow");
 });
+
+
 

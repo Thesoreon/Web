@@ -24,8 +24,10 @@ $(document).ready(function() {
 	});
 });
 
+/* JQUERY AJAX */
+
 $(".image").click(function() {
-   $("#PlaceHolder").load("html.txt");
+   $("#PlaceHolder").load("../files/" + this.alt + ".txt");
    //$("#PlaceHolder").html(this.alt);
    $("html, body").animate({ scrollTop: 0 }, "slow");
 });

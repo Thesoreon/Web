@@ -34,7 +34,7 @@
 	}
 	
 	.image {
-		max-width: 50%;
+		max-width: 80%;
 	}
 
 	.Aside1 { order: 1; flex: 1 100%; }

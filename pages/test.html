@@ -30,28 +30,16 @@
  	   <ul id="Navigation">
 		<li><a href="index.html">HOME</a></li>
 		<li><a href="projects.html">PROJECTS</a></li>
-		<li><a href="about.html" class="Active">ABOUT</a></li>
+		<li><a href="about.html">ABOUT</a></li>
 		<li><a href="contact.html">CONTACT</a></li>
-		<li><a href="test.html">TEST</a></li>
+		<li><a href="test.html" class="Active">TEST</a></li>
 	   </ul>
 	  </div>
 	</nav>
 
   <div class="Wrapper2">
-	<article class="Main">
-		<h2>About</h2>
-
-		 <p id="PlaceHolder">I'm teenager from Czech Republic, who loves programming. I found this hobby when
-		 i was fourteen when my older brother showed me what you can do with only text editor.</p> <hr />
-
-      <div class="imgcontainer">
-       <img src="../images/html.png" alt="html" class="image" />
-       <img src="../images/css.png" alt="css" class="image" /> 
-       <img src="../images/javascript.png" alt="js" class="image" />
-       <img src="../images/jquery.png" alt="jq" class="image" />
-       <img src="../images/php.png" alt="php" class="image" />
-	  </div>
-
+	<article class="Main" ng-app="">
+		<p>Hello this is {{ "my first Angular Expression" }}</p>
 	</article>
    </div>
    
@@ -61,5 +49,6 @@
   </div>
 
  <script type="text/javascript" src="../script.js"></script>
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
 </body>
 </html>

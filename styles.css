@@ -108,6 +108,32 @@ footer {
 	text-align: center;
 }
 
+.download {
+	display: block;
+
+	background-color: rgb(179, 217, 69);
+	color: black;
+
+	width: 100px;
+	margin: 0 auto;
+	padding: 10px;
+
+	text-align: center;
+
+	border: 4px solid transparent;
+	border-radius: 32px;
+
+	text-decoration: none;
+	font-family: textFont;
+	font-size: 22px;
+	font-weight: normal;
+}
+
+.download:hover {
+	transition: background 0.5s ease-in-out;
+	background-color: rgba(179, 217, 69, 0.5);
+}
+
 .Main hr {
 	width: 100px;
 }

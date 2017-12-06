@@ -5,6 +5,8 @@ window.onresize = function() {
 
 	if(window.innerWidth > 600)
     	nav.style.display = "block";
+    else 
+    	$("#SubNavigation").hide();
 };
 
 /* JQUERY */
@@ -31,15 +33,17 @@ function testCookies() {
 LoadImages();
 
 function LoadImages() {
-	var temp = document.getElementsByClassName("image");
+	var temp = document.getElementsByClassName("galleryimage");
 	var modal = document.getElementById("Modal");
 	var modalImg = document.getElementById("img01");
 	var closeButton = document.getElementsByClassName("Close")[0];
+	var caption = document.getElementById("Caption");
 
 	for (var i = 0; i < temp.length; i++) {
 		temp[i].addEventListener("click", function() {
 			modal.style.display = "block";
-			modalImg.src = this.src;			
+			modalImg.src = this.src;
+			caption.innerHTML = this.alt;			
 		});
 	}
 

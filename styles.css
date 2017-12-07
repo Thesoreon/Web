@@ -233,3 +233,12 @@ footer {
 	animation-name: ZoomIn;
     animation-duration: 0.6s;
 }
+
+form {
+	text-align: center;
+}
+
+form textarea, input {
+	margin-bottom: 1px;
+	width: 240px;
+}

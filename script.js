@@ -34,6 +34,9 @@ LoadImages();
 
 function LoadImages() {
 	var temp = document.getElementsByClassName("galleryimage");
+
+	if(temp.length <= 0) return;
+
 	var modal = document.getElementById("Modal");
 	var modalImg = document.getElementById("img01");
 	var closeButton = document.getElementsByClassName("Close")[0];
@@ -51,3 +54,20 @@ function LoadImages() {
   		modal.style.display = "none";
 	}
 }
+
+$("#Submission").click(function(e) {
+	e.preventDefault();
+
+	$.ajax({
+           datatype: "html",
+		   type: "POST",
+           data: "email=" + $("#femail").val(),
+           url: "../index.php",
+           success: function(data)
+           {	
+               $("#output").html(data);
+           }
+	});
+
+	return false;
+});

@@ -40,6 +40,15 @@
   <div class="Wrapper2">
 	<article class="Main" ng-app="">
 		<p>Hello this is {{ "my first Angular Expression" }}</p>
+
+		<form action="../index.php" method="post">
+			<input type="email" name="email" placeholder="Your email" id="femail"> <br />
+			<textarea name="message" maxlength="120" placeholder="Your message" rows="10" id="Fmessage"></textarea> <br />
+			<input type="submit" name="submitbutton" id="Submission">
+
+			<p id="output">Output</p>
+		</form>
+
 	</article>
    </div>
    

@@ -61,8 +61,8 @@ $("#Submission").click(function(e) {
 	$.ajax({
            datatype: "html",
 		   type: "POST",
-           data: "email=" + $("#femail").val(),
-           url: "../index.php",
+           data: {email: $("#femail").val(), message: $("#Fmessage").val()},
+           url: "../vendor/mailer.php",
            success: function(data)
            {	
                $("#output").html(data);

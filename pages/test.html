@@ -14,6 +14,7 @@
   <link rel="shortcut icon" href="https://thesoreon.github.io/Web/pages/favicon.ico" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
 
  </head>
 <body>
@@ -38,8 +39,9 @@
 	</nav>
 
   <div class="Wrapper2">
-	<article class="Main" ng-app="">
-		<p>Hello this is {{ "my first Angular Expression" }}</p>
+	<article class="Main" ng-app="myApp">
+		<p ng-app="firstApp" ng-controller="myCtrl">Hello this is {{ text }}</p>
+		 <th-directive></th-directive>
 
 		<form action="../index.php" method="post">
 			<input type="email" name="email" placeholder="Your email" id="femail"> <br />
@@ -58,7 +60,6 @@
   </div>
 
  <script type="text/javascript" src="../script.js"></script>
- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
 
 </body>
 </html>

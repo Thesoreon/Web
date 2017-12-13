@@ -24,12 +24,18 @@ $(".image").click(function() {
    $("html, body").animate({ scrollTop: 0 }, "slow");
 });
 
+/* Angular */
+
+
+
 /* TESTING ZONE */
 
+//Function that tests if are cookies enabled
 function testCookies() {
 	alert("COOKIES: " + navigator.cookieEnabled);
 }
 
+//Image Gallery
 LoadImages();
 
 function LoadImages() {
@@ -55,6 +61,7 @@ function LoadImages() {
 	}
 }
 
+//Function for submiting form
 $("#Submission").click(function(e) {
 	e.preventDefault();
 
@@ -70,4 +77,18 @@ $("#Submission").click(function(e) {
 	});
 
 	return false;
+});
+
+var app = angular.module("firstApp", []);
+
+app.controller("myCtrl", function($scope) {
+	$scope.text = "my first angular expression";
+});
+
+var myApp = angular.module("myApp", []);
+
+myApp.directive("thDirective", function() {
+	return {
+		template : "<b>My first angular directive</b>"
+	};
 });

@@ -13,7 +13,6 @@ nav ul {
 
 nav li {
 	float: left;
-	padding: 16px;
 
 	transition: background 0.5s linear;
 }
@@ -24,9 +23,12 @@ nav li:hover {
 	transition: background 0.5s linear;
 }
 
-nav a {
+nav a, .ShowButton {
 	text-decoration: none;
 	color: white;
+
+	display: block;
+	padding: 16px;
 
 	font-family: navFont;
 	font-size: 24px;
@@ -83,9 +85,6 @@ footer {
 
 	display: none;
 	background-color: #E76F51;
-
-	font-family: navFont;
-	font-size: 24px;
 }
 
 .Main {

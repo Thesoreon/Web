@@ -5,8 +5,6 @@ window.onresize = function() {
 
 	if(window.innerWidth > 600)
     	nav.style.display = "block";
-    else 
-    	$("#SubNavigation").hide();
 };
 
 /* JQUERY */
@@ -79,16 +77,15 @@ $("#Submission").click(function(e) {
 	return false;
 });
 
-var app = angular.module("firstApp", []);
+
+var app = angular.module("myApp", []);
 
 app.controller("myCtrl", function($scope) {
 	$scope.text = "my first angular expression";
 });
 
-var myApp = angular.module("myApp", []);
-
-myApp.directive("thDirective", function() {
+app.directive("thDirective", function() {
 	return {
-		template : "<b>My first angular directive</b>"
+		template: "<b>My first angular directive</b>"
 	};
 });

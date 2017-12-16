@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
  <head>
 	 <title>Thesoreon</title>
 
@@ -8,13 +8,14 @@
   <meta name="description" content="Official website about Thesoreon"/>
   <meta name="keywords" content="Official, Portfolio, Thesoreon"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="stylesheet" type="text/css" href="../styles.css"/>
-  <link rel="stylesheet" type="text/css" href="../responsive.css"/>
+
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css"/>
+  <link rel="stylesheet" type="text/css" href="../styles/responsive.css"/>
 
   <link rel="shortcut icon" href="https://thesoreon.github.io/Web/pages/favicon.ico" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
 
  </head>
 <body>
@@ -24,7 +25,7 @@
 	
 	<nav>
  	   <ul>
- 	   	<li class="ShowButton">SHOW</li>
+ 	   	<li class="ShowButton">MENU</li>
  	   </ul>
 
  	  <div id="SubNavigation">
@@ -43,7 +44,7 @@
 		<p ng-controller="myCtrl">Hello this is {{ text }}</p>
 		 <th-directive></th-directive>
 
-		<form action="../index.php" method="post">
+		<form method="post">
 			<input type="email" name="email" placeholder="Your email" id="femail"> <br />
 			<textarea name="message" maxlength="120" placeholder="Your message" rows="10" id="Fmessage"></textarea> <br />
 			<input type="submit" name="submitbutton" id="Submission">
@@ -54,13 +55,12 @@
 	</article>
    </div>
    
-  <script type="text/javascript" src="../script.js"></script>
-   
 	<footer>
 		&copy; Thesoreon 2017
 	</footer>
   </div>
 
+  <script type="text/javascript" src="../scripts/script.js"></script>
 
 </body>
 </html>

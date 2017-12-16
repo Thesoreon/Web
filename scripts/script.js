@@ -77,15 +77,24 @@ $("#Submission").click(function(e) {
 	return false;
 });
 
+//Angular testing
+TryAngular();
 
-var app = angular.module("myApp", []);
+function TryAngular() {
+	try {
+		var app = angular.module("myApp", []);
 
-app.controller("myCtrl", function($scope) {
-	$scope.text = "my first angular expression";
-});
+		app.controller("myCtrl", function($scope) {
+			$scope.text = "my first angular expression";
+		});
 
-app.directive("thDirective", function() {
-	return {
-		template: "<b>My first angular directive</b>"
-	};
-});
+		app.directive("thDirective", function() {
+			return {
+				template: "<b>My first angular directive</b>"
+			};
+		});
+	}
+	catch(e) {
+
+	}
+}

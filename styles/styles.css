@@ -177,17 +177,17 @@ footer {
 
 @font-face {
 	font-family: navFont;
-	src: url(fonts/BarlowCondensed-Thin.ttf);
+	src: url(../fonts/BarlowCondensed-Thin.ttf);
 }
 
 @font-face {
 	font-family: headerFont;
-	src: url(fonts/BarlowCondensed-Bold.ttf);
+	src: url(../fonts/BarlowCondensed-Bold.ttf);
 }
 
 @font-face {
 	font-family: textFont; 
-	src: url(fonts/BarlowCondensed-Medium.ttf);
+	src: url(../fonts/BarlowCondensed-Medium.ttf);
 }
 
 @keyframes TextFade {

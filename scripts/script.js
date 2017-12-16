@@ -75,6 +75,7 @@ $("#Submission").click(function(e) {
 	});
 
 	return false;
+
 });
 
 //Angular testing

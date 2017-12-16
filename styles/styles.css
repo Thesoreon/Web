@@ -1,3 +1,5 @@
+/* Main styles */
+
 body {
 	margin: 0px;
 }
@@ -80,6 +82,7 @@ footer {
 	text-align: center;
 }
 
+
 .ShowButton {
 	cursor: pointer;
 
@@ -106,6 +109,8 @@ footer {
 
 	text-align: center;
 }
+
+/* ------- */ 
 
 .download {
 	display: block;
@@ -155,6 +160,8 @@ footer {
 	opacity: 0.6;
 }
 
+/* Images and image gallery */
+
 .imgcontainer {
   text-align: center;
 }
@@ -173,31 +180,6 @@ footer {
 	cursor: pointer;
 
 	border: 1px solid black;
-}
-
-@font-face {
-	font-family: navFont;
-	src: url(../fonts/BarlowCondensed-Thin.ttf);
-}
-
-@font-face {
-	font-family: headerFont;
-	src: url(../fonts/BarlowCondensed-Bold.ttf);
-}
-
-@font-face {
-	font-family: textFont; 
-	src: url(../fonts/BarlowCondensed-Medium.ttf);
-}
-
-@keyframes TextFade {
-	from {opacity: 0; }
-	to {opacity: 1; }
-}
-
-@keyframes ZoomIn {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
 }
 
 #Caption {
@@ -233,11 +215,70 @@ footer {
     animation-duration: 0.6s;
 }
 
+/* Form Styles */
+
 form {
 	text-align: center;
 }
 
-form textarea, input {
-	margin-bottom: 1px;
+form input[type=email], textarea {
+	padding: 8px;
 	width: 240px;
+
+	margin-bottom: 1px;
+
+	border: 1px solid #14213D;
+
+	outline: none;
+}
+
+form textarea:focus, input[type=email]:focus {
+	background-color: rgba(179, 217, 69, 0.4);
+}
+
+input[type=submit] {
+	transition: background 0.5s ease-in-out;
+
+	background-color: #FCA311;
+	padding: 16px;
+	width: 240px;
+	border-radius: 32px;
+	border: none;
+
+	font-family: textFont;
+	font-size: 20px;
+}
+
+input[type=submit]:hover {
+	transition: background 0.2s ease-in-out;
+
+	cursor: pointer;
+	background-color: rgba(252, 163, 17, 0.5);
+}
+
+/* Font-faces, Animations */
+
+@font-face {
+	font-family: navFont;
+	src: url(../fonts/BarlowCondensed-Thin.ttf);
+}
+
+@font-face {
+	font-family: headerFont;
+	src: url(../fonts/BarlowCondensed-Bold.ttf);
+}
+
+@font-face {
+	font-family: textFont; 
+	src: url(../fonts/BarlowCondensed-Medium.ttf);
+}
+
+@keyframes TextFade {
+	from {opacity: 0; }
+	to {opacity: 1; }
+}
+
+@keyframes ZoomIn {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
 }

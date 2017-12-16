@@ -14,12 +14,14 @@
 	min-height: 100vh; /* This size all the items in wrapper, so the footer is at the end of page */ 
 }
 
+/* For tablets */
 @media (max-width: 1024px) {
 	.image {
 		max-width: 35%;
 	}
 }
 
+/* For mobile phones */
 @media (max-width: 600px) {
 
 	#SubNavigation {

@@ -99,3 +99,15 @@ function TryAngular() {
 
 	}
 }
+
+setInterval(refreshDate, 1000);
+
+function refreshDate() {
+	var d = new Date();
+ 
+	$("#DateHolder").html(d.getDate() + "." + d.getMonth() + "." + d.getFullYear() + " " + getDate(d.getHours()) + ":" + getDate(d.getMinutes()) + ":" + getDate(d.getSeconds()));
+}
+
+function getDate(x) {
+	return x > 9 ? x : "0" + x;
+}

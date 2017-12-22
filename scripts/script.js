@@ -25,7 +25,6 @@ $(".image").click(function() {
 /* Angular */
 
 
-
 /* TESTING ZONE */
 
 //Function that tests if are cookies enabled
@@ -95,19 +94,33 @@ function TryAngular() {
 			};
 		});
 	}
-	catch(e) {
-
+    catch (e) {
+        //Tempomary solution
+	    console.log("There is no angular application");
 	}
 }
 
-setInterval(refreshDate, 1000);
+//Time
+refreshDate();
 
 function refreshDate() {
+    requestAnimationFrame(refreshDate);
 	var d = new Date();
  
-	$("#DateHolder").html(d.getDate() + "." + d.getMonth() + "." + d.getFullYear() + " " + getDate(d.getHours()) + ":" + getDate(d.getMinutes()) + ":" + getDate(d.getSeconds()));
+	$("#DateHolder").html(d.getDate() + "." + getMonth(d.getMonth()) + "." + d.getFullYear() + " " + getDate(d.getHours()) + ":" + getDate(d.getMinutes()) + ":" + getDate(d.getSeconds()));
 }
 
 function getDate(x) {
 	return x > 9 ? x : "0" + x;
 }
+
+//This function is there because month started with 0 not with 1 like january
+function getMonth(x) {
+	x++;
+	return x > 9 ? x : "0" + x;
+}
+
+//JSON
+$.getJSON("../scripts/objects.json", function(data) {
+	//alert(data.Hobbies[0]);
+});
